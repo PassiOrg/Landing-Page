@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+}
+#back{
+    width: 100%;
+    height: 100vh;
+}
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#top{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+#workingArea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    /* background-color: #000; */
+}
+
+/*  NAVIGATION BAR */
+.nav{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav a{
+    pointer-events: all;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: .8vw;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.navleft, .navright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.nav img{
+    height: 60px;
+}
+.navright a{
+    color: #fff;
+    font-family: sans-serif;
+}
+
+/* LANDING PAGE */
+.landingpage{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20%;
+}
+.left-lp{
+    min-width: 50%;
+}
+.left-lp .elem{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+    /* background-color:  red; */
+}
+.left-lp .elem h1:nth-child(1){
+    top: 0;
+}
+.left-lp .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 9.5vw;
+}
+button{
+    pointer-events: all;
+    padding: .3vw 1.7vw;
+    font-size: 2.5vw;
+    font-family: "kajiro";
+    margin-top: 3vw;
+}
+.right-lp{
+  max-width: 20%;
+    /* background-color: blue; */
+}
+.right-lp p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: .9vw;
+    text-align: right;
+    font-family: sans-serif;
+}
+.right-lp #imagediv{
+    width: 100%;
+    height: 130px;
+    background-image: url(https://media.istockphoto.com/id/1450268558/photo/summer-selfie.webp?b=1&s=170667a&w=0&k=20&c=Vipvrhj292OQRhFkUTIqKnbtMlSn7EWlIbZRzWE66TU=);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+} 
+ .right-lp p:nth-child(4){
+    padding-top: 40px;
+    font-family: sans-serif;
+ }
